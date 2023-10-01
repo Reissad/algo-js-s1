@@ -11,13 +11,13 @@ class Pokemon {
     attackPokemon(Pokemon){
         if (this.Hp>0){
         
-            if (Math.random(0,1)<Pokemon.luck && Pokemon.Islucky==true){
+            if (Math.random(0,1)<Pokemon.luck && Pokemon.Islucky==true){ /// on génère un nombre entre (0,1) est on le compare avec la luck du pokemeon, si Pokmeon.luck> au nombre aléatoir alors le pokemon esquive
                 console.log(Pokemon.name+ " a esquivé l'attaque")
             }
             else{
                 Pokemon.Hp-=(this.atk*Pokemon.Defense) //// j'ai multiplié pour éviter des résulstat négatifs !
                 if(Pokemon.Hp<0){
-                    console.log(Pokemon.name+" is dead")
+                    console.log(P=okemon.name+" is dead")
                 }else {
                     console.log(Pokemon.name+" "+Pokemon.Hp+" HP")
                 }
